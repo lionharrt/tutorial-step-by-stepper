@@ -1,5 +1,5 @@
 // import { ipcRenderer } from 'electron/renderer'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { RouteComponentProps } from 'react-router'
 import TutorialManager from 'TutorialManager'
 import { TUTORIAL } from 'TutorialManager/TUTORIAL.type'
@@ -10,11 +10,11 @@ type HomeProps = {
 const Home = ({ history }: HomeProps & RouteComponentProps) => {
 	const tutorials = TutorialManager().local
 	const [tutorial, setTutorial] = useState<TUTORIAL>()
-	const [startDirectory, setStartDirectory] = useState<string>()
+	// const [startDirectory, setStartDirectory] = useState<string>()
     
-	useEffect(() => {
-		console.log(startDirectory)
-	},[startDirectory])
+	// useEffect(() => {
+	// 	console.log(startDirectory)
+	// },[startDirectory])
 	return (
 		<div style={{display:'flex', flexDirection:'column', padding:'2rem',alignItems:'center',justifyContent:'center', marginBottom:'15vh'}}>
 			<h4>Please Choose a Tutorial to begin</h4>
