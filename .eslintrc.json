@@ -1,0 +1,44 @@
+{
+	"env": {
+		"browser": true,
+		"es2020": true
+	},
+	"extends": [ "plugin:react/recommended" ],
+	"parser": "@typescript-eslint/parser",
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint", "react", "simple-import-sort", "eslint-plugin-react", "unused-imports"],
+	"rules": {
+		"indent": ["error", "tab"],
+		"semi": ["error", "never"],
+        "space-before-function-paren": ["error", "never"],
+        "keyword-spacing": ["error", { "overrides": { "if": { "after": false }, "for": { "after": false }, "while": { "after": false } } }],
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "function", "next": "*" },
+            { "blankLine": "always", "prev": "block-like", "next": "*" },
+            { "blankLine": "always", "prev": "import", "next": "block-like" }
+        ],
+        "simple-import-sort/imports": "error",
+        "react/no-typos": "error",
+        "react/self-closing-comp": "error",
+        "react/jsx-closing-tag-location": "error",
+        "react/jsx-equals-spacing": ["error", "never"],
+        "react/jsx-tag-spacing": ["error",{"closingSlash": "never"}],
+        "react/display-name": "off",
+        "no-unused-vars": "off",
+        "react/prop-types": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error"
+	}
+}

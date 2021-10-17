@@ -1,0 +1,4 @@
+1. Choose Tutorial from source (beginning local)
+2. open file browser select and save starting folder
+3. run init 
+4. start at step 1: show relavent UI and have run button

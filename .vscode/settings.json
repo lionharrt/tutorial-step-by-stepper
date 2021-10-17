@@ -1,23 +1,24 @@
 {
-  "files.associations": {
-    ".eslintrc": "jsonc",
-    ".prettierrc": "jsonc",
-    ".eslintignore": "ignore"
-  },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "eslint.format.enable": true,
+    "eslint.packageManager": "yarn",
 
-  "javascript.validate.enable": false,
-  "javascript.format.enable": false,
-  "typescript.format.enable": false,
-
-  "search.exclude": {
-    ".git": true,
-    ".eslintcache": true,
-    ".erb/dll": true,
-    "release/{build,app/dist}": true,
-    "node_modules": true,
-    "npm-debug.log.*": true,
-    "test/**/__snapshots__": true,
-    "yarn.lock": true,
-    "*.{css,sass,scss}.d.ts": true
-  }
 }
